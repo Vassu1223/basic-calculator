@@ -1,0 +1,68 @@
+/* Set general body styling */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main calculator box */
+.calculator {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Input display box */
+#display {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Grid layout for calculator buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Basic button styling */
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for all buttons */
+button:hover {
+  background-color: #d9d9d9;
+}
+
+/* Styling for clear (C) button */
+.clear {
+  grid-column: span 4;
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.clear:hover {
+  background-color: #cc0000;
+}
