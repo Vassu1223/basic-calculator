@@ -1,0 +1,56 @@
+# basic-calculator
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Calculator</title>
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Calculator container -->
+  <div class="calculator">
+    <h2>Basic Calculator</h2>
+
+    <!-- Display area for input and result -->
+    <input type="text" id="display" disabled>
+
+    <!-- Buttons layout -->
+    <div class="buttons">
+
+      <!-- First row: numbers 7,8,9 and divide operator -->
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('/')">/</button>
+
+      <!-- Second row: numbers 4,5,6 and multiply operator -->
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button onclick="appendValue('*')">*</button>
+
+      <!-- Third row: numbers 1,2,3 and minus operator -->
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button onclick="appendValue('-')">-</button>
+
+      <!-- Fourth row: 0, decimal, equal and plus operator -->
+      <button onclick="appendValue('0')">0</button>
+      <button onclick="appendValue('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="appendValue('+')">+</button>
+
+      <!-- Clear button spans full width -->
+      <button onclick="clearDisplay()" class="clear">C</button>
+
+    </div>
+  </div>
+
+  <!-- Link to external JavaScript file for functionality -->
+  <script src="script.js"></script>
+</body>
+</html>
